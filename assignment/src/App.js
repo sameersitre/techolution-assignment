@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-       
-      </div>
-    );
-  }
-}
 
+    constructor() {
+        super();
+        this.state = {
+            
+        }
+    }
+    
+    render() {
+        return (
+            <div  >
+                <ul className='leftposition' >
+                    <li className="list1"><a href="#home">Home</a></li>
+                    <li className="list1"><a href="#newstudent">Add Student</a></li>
+                    <li className="list1"><a href="#about">About</a></li>
+                </ul>
+
+
+            </div>
+        );
+    }
+}
 export default App;

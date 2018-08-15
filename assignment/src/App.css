@@ -1,14 +1,39 @@
-
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.leftposition {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(47, 13, 61);
+  width: inherit
+  
 }
 
+.hidetag{
+  display: none;
+}
 
+li {
+  float: left;
+  font-size: 18px; 
 
+}
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+li a {
+  display: block;
+  color: rgb(251, 251, 251);
+  text-align: center;
+  font-size: 18px; 
+  padding: 10px 30px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(113, 47, 167);
+  float: right;
+}
+
+.active {
+  background-color: rgb(43, 88, 45);
+  
 }
