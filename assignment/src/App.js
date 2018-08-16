@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
 import './App.css';
 import StudentList from './_components/StudentList';
+import NavBar from './_components/NavBar.js';
+import AdmissionForm from './_components/AdmissionForm.js';
+import { HashRouter, NavLink, Route } from 'react-router-dom';
 class App extends Component {
 
     constructor() {
         super();
         this.state = {
-            
+
         }
     }
 
     render() {
         return (
-            <div  >
-                <ul className='leftposition' >
-                    <li className="list1"><a href="#home">Home</a></li>
-                    <li className="list1"><a href="#newstudent">Add Student</a></li>
-                    <li className="list1"><a href="#about">About</a></li>
-                </ul>
-            <StudentList/>
+            <HashRouter>
+                <div>
+                    <ul>
+                        <li><NavLink to="/"></NavLink></li>
+                        <li><NavLink to="/home"></NavLink></li>
+                        <li><NavLink to="/addStudent"></NavLink></li>
+                    </ul>
 
-            </div>
+                    <div >
+              <Route exact path="/" component={NavBar} />
+              {/* <Route path="/home" component={StudentList} /> */}
+              {/* <Route exact path="/addstudent" component={AdmissionForm} /> */}
+              </div>
+                </div>
+            </HashRouter>
+        
         );
     }
 }

@@ -10,7 +10,7 @@ class StudentList extends Component {
       item: '',
       tasks: ['Learn Reactjs', 'Learn to add animations from external libraries grhgur in reactjs'],
       buttondisabled: 'true',
-      studentlist: [Students],
+      studentlist: Students,
     }
   }
 
@@ -20,9 +20,8 @@ class StudentList extends Component {
       <div>
 
         <div className="todocontainer">
-          {this.state.tasks.map(
-            (taskname, i) =>
-              (<Card key={i} tasks={i+'. '+taskname} />))}
+          {Students.map((taskname, i) =>(
+          <Card key={i} profile={i+'. '+taskname} />))}
         </div>
       </div>
     );
