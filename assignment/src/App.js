@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import StudentList from './_components/StudentList';
 class App extends Component {
 
     constructor() {
@@ -8,7 +9,7 @@ class App extends Component {
             
         }
     }
-    
+
     render() {
         return (
             <div  >
@@ -17,7 +18,7 @@ class App extends Component {
                     <li className="list1"><a href="#newstudent">Add Student</a></li>
                     <li className="list1"><a href="#about">About</a></li>
                 </ul>
-
+            <StudentList/>
 
             </div>
         );
