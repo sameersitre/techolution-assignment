@@ -17,19 +17,19 @@ class AdmissionForm extends Component {
     //different callback instance is created each time the component is rendered so to avoid it, currying is used.
 
     handleOnChange = (param) => (event) => {
-        if(param=='name'){
+        if(param==='name'){
             this.setState({ name: event.target.value });
         }
-        else if(param=='lastname'){
+        else if(param==='lastname'){
             this.setState({ lastnamefield: event.target.value });
         }
-        else if(param=='class'){
+        else if(param==='class'){
             this.setState({ class: event.target.value });
         }
-        else if(param=='year'){
+        else if(param==='year'){
             this.setState({ year: event.target.value });
         }
-        else if(param=='percent'){
+        else if(param==='percent'){
             this.setState({ percent: event.target.value });
         }
         
@@ -39,7 +39,7 @@ class AdmissionForm extends Component {
     }
     validator=()=> {
         if ((/\d/.test(this.state.name)) ||
-         (this.state.activeinputfield=='lastname'  && /\d/.test(this.state.name))){
+         (this.state.activeinputfield==='lastname'  && /\d/.test(this.state.name))){
 
             this.setState({ suggestions: '*Please enter valid name.' })
             this.setState({submitdisabled:'true'})
@@ -77,7 +77,7 @@ class AdmissionForm extends Component {
                 </table>
                 <br />
                 <h4>{this.state.suggestions}</h4>
-                <button className='submitbutton' disabled={this.state.submitdisabled == "true"}>SUBMIT</button>
+                <button className='submitbutton' disabled={this.state.submitdisabled === "true"}>SUBMIT</button>
             </div>
 
         );
