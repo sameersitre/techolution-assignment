@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../_styles/StudentList.css';
 import Card from './Card';
 import Students from '../temporary.json';
+
 class StudentList extends Component {
   constructor(props) {
     var id = 0;
@@ -15,13 +16,14 @@ class StudentList extends Component {
   }
 
   render() {
-    
+
     return (
       <div>
 
         <div className="todocontainer">
-          {Students.map((taskname, i) =>(
-          <Card key={i} profile={i+'. '+taskname} />))}
+          {Students.map((taskname, i) => (
+            <Card key={i} profile={taskname} />
+          ))}
         </div>
       </div>
     );

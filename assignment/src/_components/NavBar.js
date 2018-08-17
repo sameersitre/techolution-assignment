@@ -20,18 +20,17 @@ class NavBar extends Component {
 
                     <div  >
                         <ul className='leftposition' >
-                            <li ><NavLink to="/">Home</NavLink></li>
-                            <li ><NavLink to="/studentlist">Student List</NavLink></li>
+                            <li ><NavLink to="/studentsresult">Students Result</NavLink></li>
                             <li ><NavLink to="/addstudent"> Add Student</NavLink></li>
                         </ul>
                         <div >
-                            <Route path="/studentlist" component={StudentList} />
+                            <Route path="/studentsresult" component={StudentList} />
                             <Route path="/addstudent" component={AdmissionForm} />
 
                         </div>
 
 
-                    </div>
+                    </div>  
                 </HashRouter>
             </div>
         );
