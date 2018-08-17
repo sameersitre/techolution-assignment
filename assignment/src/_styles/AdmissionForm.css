@@ -1,0 +1,36 @@
+.newusercontainer{
+    width: 820px;
+     height: 500px;
+     padding: 20px;
+     margin: auto;
+    margin-top: 20px;
+      box-shadow: 0px 0px 40px rgb(202, 202, 202);
+      overflow-y: auto;
+}
+.heading{
+    margin-left: 260px;
+}
+#input{
+    width: 400px;
+    height: 20px;
+    font-size: 5mm;
+    border: 1px solid lightgray;
+    padding: 3px;
+    margin: 2px;
+    box-shadow: 0px 1px 2px rgb(126, 126, 126);
+    border-radius: 5px;
+  }
+
+  .submitbutton{
+    /* 
+    color: white; */
+    width: 410px;
+    height: 40px;
+    /* border: 50px;
+    
+    background-color: rgb(113, 47, 167);*/
+    font-size: 6mm;
+    margin-left: 125px;
+    box-shadow: 0px 5px 20px rgb(202, 202, 202); 
+  border-radius: 5px;
+  }
