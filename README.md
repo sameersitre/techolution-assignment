@@ -3,6 +3,6 @@ Reactjs Practice
 
 go to root folder named ```assignment```
 
-type ```npm install``` to install node modules
+type ```npm install``` in CLI to install node modules, then
 
-then type ```npm start``` to run the project
+type ```npm start``` to run the project.
