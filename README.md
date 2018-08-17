@@ -1,8 +1,8 @@
 # techolution-assignment
 Reactjs Practice
 
-type ```npm install``` to install node modules
-
 go to root folder named ```assignment```
+
+type ```npm install``` to install node modules
 
 then type ```npm start``` to start the project
